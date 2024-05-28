@@ -4,11 +4,10 @@ import { useHistory } from 'react-router-dom';
 
 const Book = ({
   id,
-  bookname,
-  author,
-  price,
-  quantity,
-  date,
+  nome,
+  telefone,
+  email,
+  datanascimento,
   handleRemoveBook
 }) => {
   const history = useHistory();
@@ -18,10 +17,10 @@ const Book = ({
       <Card.Body>
         <Card.Title className="book-title">{bookname}</Card.Title>
         <div className="book-details">
-          <div>Author: {author}</div>
-          <div>Quantity: {quantity} </div>
-          <div>Price: {price} </div>
-          <div>Date: {new Date(date).toDateString()}</div>
+          <div>Nome: {nome}</div>
+          <div>Telefone: {telefone} </div>
+          <div>Email: {email} </div>
+          <div>Data De Nascimento: {new Date(date).toDateString()}</div>
         </div>
         <Button variant="primary" onClick={() => history.push(`/edit/${id}`)}>
           Edit

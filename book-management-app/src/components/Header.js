@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <header>
-      <h1>Book Management App</h1>
+     <h1>Zapzap2 App</h1>
       <hr />
       <div className="links">
         <NavLink to="/" className="link" activeClassName="active" exact>
-          Books List
+          Lista de contatos
         </NavLink>
         <NavLink to="/add" className="link" activeClassName="active">
-          Add Book
+          Add Contato
         </NavLink>
       </div>
     </header>
